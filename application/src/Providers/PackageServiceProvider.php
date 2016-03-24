@@ -35,8 +35,8 @@ class PackageServiceProvider extends ServiceProvider {
         //Load the routes.php file of the package present inside the src/Http Folder
         require __DIR__ . '/../Http/routes.php';
 
-        //Loading views "package_namespace is a namespace for the views"
-        $this->loadViewsFrom(__DIR__ . '/../resources/views/packagename', 'package_namespace');
+        //Loading views"
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/packagename', 'packagename');
 
         //Publish views and assets
         $this->publishes([

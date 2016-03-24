@@ -2,4 +2,4 @@
 <div class="navbar-header">
 
 </div>
-@include('package_namespace::includes.sidebar')
+@include('packagename::includes.sidebar')

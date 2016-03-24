@@ -24,13 +24,13 @@
         <div id="wrapper">
             <!--Header and Navigation Sidebar-->
             <!-- Navigation -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                @include('package_namespace::includes.header')
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                @include('packagename::includes.header')
             </nav>
             <div id="page-wrapper">
                 @yield('content')
             </div>
-            @include('package_namespace::includes.footer')
+            @include('packagename::includes.footer')
         </div>
     </body>
 </html>

@@ -32,7 +32,7 @@ class PackageController extends Controller {
     public function index() {
         //packagename_namespace should be same as the 
         //one defined in the PackageServiceProvider's $this->loadViewsFrom()
-        return view('package_namespace::pages.dashboard');
+        return view('packagename::pages.home');
     }
 
     /**

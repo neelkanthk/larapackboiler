@@ -9,6 +9,7 @@
 // Example routes
 Route::get('packagename/test', 'Package\Application\Http\Controllers\PackageController@exampleAction');
 Route::get('packagename/dbtest', 'Package\Application\Http\Controllers\PackageController@databaseAccess');
+Route::get('packagename/viewtest', 'Package\Application\Http\Controllers\PackageController@index');
 
 /*
   First run and installations route
