@@ -8,4 +8,4 @@
  */
 // An example route
 
-Route::get('packageboilerplate/test', 'PackageController@exampleAction');
+Route::get('packageboilerplate/test', 'Package\Application\Http\Controllers\PackageController@exampleAction');
