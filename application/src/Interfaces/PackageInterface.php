@@ -1,7 +1,7 @@
 <?php
 
 /**
- * An example Interface for the package Repositories.
+ * An example Interface for your package Repositories.
  * Feel free to create more interfaces.
  * 
  * @author Neelkanth Kaushik
@@ -13,6 +13,6 @@ namespace Package\Application\Interfaces;
 interface PackageInterface {
 
     public function getArray();
-    
+
     public function fetchFromDb();
 }

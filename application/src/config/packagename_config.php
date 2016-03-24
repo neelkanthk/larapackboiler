@@ -7,5 +7,5 @@
  * @since 1.0.0
  */
 return [
-    'packagename' => 'laravel_packageboilerplate',
+    'packagename' => '',
 ];

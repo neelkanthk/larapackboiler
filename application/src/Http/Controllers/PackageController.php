@@ -12,6 +12,8 @@ namespace Package\Application\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Package\Application\Interfaces\PackageInterface;
+use Event;
+use Package\Application\Events\PackageEvent;
 
 class PackageController extends Controller {
 
@@ -55,6 +57,10 @@ class PackageController extends Controller {
         //Fetch the data using the repository function
         $data = $this->data->fetchFromDb();
         return $data;
+    }
+
+    public function eventAction() {
+        Event::fire(new PackageEvent());
     }
 
     /**
