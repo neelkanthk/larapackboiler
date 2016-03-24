@@ -31,6 +31,10 @@ class PackageController extends Controller {
         return "Hi I am PackageController@exampleAction";
     }
 
+    public function databaseAccess() {
+        
+    }
+
     /**
      * A basic installation action defined for setting up database tables
      * for your package
@@ -40,10 +44,12 @@ class PackageController extends Controller {
      */
     public function install() {
         \Illuminate\Support\Facades\Artisan::call('migrate', array('--path' => '/vendor/laravel_packageboilerplate/application/src/database/migrations/'));
-
+        echo "<h2>Package Tables Created Succesfully.</h2>";
         \Illuminate\Support\Facades\Artisan::call('db:seed', [
-            '--class' => 'Package\Application\database\seeds\PackageTodoTableSeeder'
+            '--class' => 'Package\Application\database\seeds\PackageTableSeeder'
         ]);
+        echo "<br/>";
+        echo "<h2>Package Tables Seeded Successfully.</h2>";
     }
 
 }

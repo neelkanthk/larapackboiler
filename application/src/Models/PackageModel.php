@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PackageModel extends Model {
 
-    protected $table = 'laravel_packageboilerplate';
+    protected $table = 'packagename_tablename';
 
     /**
      * The attributes that are mass assignable.

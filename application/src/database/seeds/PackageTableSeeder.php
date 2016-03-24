@@ -21,7 +21,7 @@ class PackageTableSeeder extends Seeder {
      */
     public function run() {
         //
-        DB::table('laravel_packageboilerplate')->insert([
+        DB::table('packageboilerplate_table')->insert([
             [
                 'name' => 'Create'
             ], [

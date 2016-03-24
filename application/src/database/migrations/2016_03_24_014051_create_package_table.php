@@ -7,11 +7,10 @@
  * @author Neelkanth Kaushik
  * @since 1.0.0
  */
-
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLaravelPackageBoilerplateTable extends Migration {
+class CreatePackageTable extends Migration {
 
     /**
      * Run the migrations.
@@ -19,7 +18,7 @@ class CreateLaravelPackageBoilerplateTable extends Migration {
      * @return void
      */
     public function up() {
-        Schema::create('laravel_packageboilerplate', function (Blueprint $table) {
+        Schema::create('packageboilerplate_table', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 100)->unique();
@@ -33,7 +32,7 @@ class CreateLaravelPackageBoilerplateTable extends Migration {
      * @return void
      */
     public function down() {
-        Schema::drop('laravel_packageboilerplate');
+        Schema::drop('packageboilerplate_table');
     }
 
 }
