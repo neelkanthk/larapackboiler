@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * An example Service Provider for the package.
+ * Feel free to add more service providers as per your requirement.
+ * 
+ * @author Neelkanth Kaushik
+ * @since 1.0.0
+ */
+
+namespace Package\Application\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class PackageServiceProvider extends ServiceProvider {
+
+    //This method is called whenever class is loaded in the config/app.php file
+    public function register() {
+        $this->app->bind('packagename', function($app) {
+            return new Package;
+        });
+
+        $this->app->bind(
+                'Package\Application\Interfaces\PackageInterface', 'Package\Application\Repositories\PackageRepository'
+        );
+    }
+
+    public function boot() {
+
+        //Publishes the configuration file to the application's config directory
+        $this->publishes([
+            __DIR__ . '/../config/packagename_config.php' => config_path('packagename_config.php'),
+        ]);
+
+        //Load the routes.php file of the package present inside the src/Http Folder
+        require __DIR__ . '/../Http/routes.php';
+
+        //Loading views "package_namespace is a namespace for the views"
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/packagename', 'package_namespace');
+
+        //Publish views and assets
+        $this->publishes([
+            __DIR__ . '/../resources/views/packagename' => base_path('resources/views/vendor/packagename'),
+            __DIR__ . '/../resources/assets' => base_path('public/vendor/packagename'),
+        ]);
+
+        //Adding the custom middleware to the application's IoC container
+        $this->app['router'];
+        $this->app['router']->middleware('packagename_auth', 'Package\Application\Http\Middlewares\PackageAuthMiddleware');
+    }
+
+}
