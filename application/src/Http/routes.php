@@ -6,9 +6,9 @@
  * @author Neelkanth Kaushik
  * @since 1.0.0
  */
-// An example route
-
+// Example routes
 Route::get('packagename/test', 'Package\Application\Http\Controllers\PackageController@exampleAction');
+Route::get('packagename/dbtest', 'Package\Application\Http\Controllers\PackageController@databaseAccess');
 
 /*
   First run and installations route
@@ -21,7 +21,7 @@ Route::get('packagename/test', 'Package\Application\Http\Controllers\PackageCont
 Route::get('packagename/install', ['as' => 'packagename_installation', 'uses' => 'Package\Application\Http\Controllers\PackageController@install']);
 
 Route::get('packagename', ['as' => 'packagename_root', function() {
-        if (!Schema::hasTable('packagename_tablename')) {
+        if (!Schema::hasTable('packageboilerplate_table')) {
             return redirect()->route('packagename_installation');
         } else {
             return redirect()->route('packagename_index');

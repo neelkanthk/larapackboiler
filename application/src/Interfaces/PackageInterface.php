@@ -13,4 +13,6 @@ namespace Package\Application\Interfaces;
 interface PackageInterface {
 
     public function getArray();
+    
+    public function fetchFromDb();
 }

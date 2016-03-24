@@ -11,6 +11,7 @@
 namespace Package\Application\Repositories;
 
 use Package\Application\Interfaces\PackageInterface;
+use Package\Application\Models\PackageModel;
 
 class PackageRepository implements PackageInterface {
 
@@ -20,6 +21,10 @@ class PackageRepository implements PackageInterface {
             '2' => 'Rambo'
         );
         return $list;
+    }
+
+    public function fetchFromDb() {
+        return PackageModel::all();
     }
 
 }

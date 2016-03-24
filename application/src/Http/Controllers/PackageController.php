@@ -11,8 +11,16 @@
 namespace Package\Application\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Package\Application\Interfaces\PackageInterface;
 
 class PackageController extends Controller {
+
+    protected $data;
+
+    //Get the repository using Dependency Injection
+    public function __construct(PackageInterface $object) {
+        $this->data = $object;
+    }
 
     /**
      * Standard index action
@@ -27,12 +35,26 @@ class PackageController extends Controller {
         return view('package_namespace::pages.dashboard');
     }
 
+    /**
+     * A simple action to return string
+     * @author Neelkanth Kaushik
+     * @since 1.0.0
+     * @return string
+     */
     public function exampleAction() {
         return "Hi I am PackageController@exampleAction";
     }
 
+    /**
+     * A simple action to get the data from database
+     * 
+     * @author Neelkanth Kaushik
+     * @since 1.0.0 
+     */
     public function databaseAccess() {
-        
+        //Fetch the data using the repository function
+        $data = $this->data->fetchFromDb();
+        return $data;
     }
 
     /**
