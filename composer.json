@@ -1,16 +1,19 @@
 {
-    "name": "neelkanth/packageboilerplate",
-    "description": "Laravel 5.1 package development boilerplate.",
+    "name": "neelkanthk/packageboilerplate",
+    "description": "Laravel 5.1+ package development boilerplate.",
     "license": "GPL",
     "authors": [
         {
             "name": "Neelkanth Kaushik",
-            "email": ""
+            "email": "neelkanthkaushik2014@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
     },
     "autoload": {
         "psr~4": {
