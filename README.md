@@ -1,9 +1,9 @@
 # laraPackBoiler
 ##A package development boilerplate for Laravel 5.1+
 
-Provides a Jump Start to your Laravel package development.
+#####Provides a Jump Start to your Laravel package development.
 
-Salient Features
+##Salient Features
 
   - Follows Laravel 5.1 directory structure.
   - Well documented with example code.
