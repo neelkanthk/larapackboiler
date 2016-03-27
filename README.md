@@ -3,7 +3,7 @@
 
 #####Provides a Jump Start to your Laravel package development.
 
-##Salient Features
+###Salient Features
 
   - Follows Laravel 5.1 directory structure.
   - Well documented with example code.
@@ -25,12 +25,12 @@ Note: You need to have composer installed on your system.
 
 3. Change the composer.json file to define dependencies and other package related information.
 
-4. Run ```sh $ composer dumpautoload ``` from your project root.
+4. Run ``` composer dumpautoload ``` from your project root.
 
 5. Run 
 
-    ```sh
-    $ php artisan vendor:publish to move the package assets, views, migrations, seeds and config files to your application.
+    ```
+    php artisan vendor:publish to move the package assets, views, migrations, seeds and config files to your application.
     ```
 
 6. That's it. You are ready to develop your package.
