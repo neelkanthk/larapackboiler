@@ -27,10 +27,10 @@ Note: You need to have composer installed on your system.
 
 4. Run ``` composer dumpautoload ``` from your project root.
 
-5. Run 
+5. Run following command to move the package assets, views, migrations, seeds and config files to your application.
 
     ```
-    php artisan vendor:publish to move the package assets, views, migrations, seeds and config files to your application.
+    php artisan vendor:publish
     ```
 
 6. That's it. You are ready to develop your package.
