@@ -30,7 +30,9 @@ Note: You need to have composer installed on your system.
 5. Run 
 
     ```sh
-    $ php artisan vendor:publish to move the package's assets, views, migrations, seeds and config files to your application.
+    $ php artisan vendor:publish to move the package assets, views, migrations, seeds and config files to your application.
     ```
 
 6. That's it. You are ready to develop your package.
+
+7. The boilerplate code is well documented to help you in your development.
