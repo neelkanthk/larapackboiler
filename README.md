@@ -35,4 +35,4 @@ Note: You need to have composer installed on your system.
 
 6. That's it. You are ready to develop your package.
 
-7. The boilerplate code is well documented to help you in your development.
+#####The boilerplate code is well documented to help you in your development.
