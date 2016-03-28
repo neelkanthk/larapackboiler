@@ -43,7 +43,13 @@ Note: You need to have composer installed on your system.
     php artisan vendor:publish
     ```
 
-7. That's it. You are ready to develop your package.
+7. Test your installation by visiting the following URL in your browser.
+
+   packagename/test
+   
+8. If you see 'Hi I am PackageController@exampleAction', then you have successfully configured the laraPackBoiler.
+
+7. That's it. Now, You are ready to develop your package.
 
 #####The boilerplate code is well documented to help you in your development.
 
