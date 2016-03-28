@@ -37,7 +37,7 @@ Note: You need to have composer installed on your system.
 
 5. Run ``` composer dumpautoload ``` from your project root.
 
-6. Run following command to move the package assets, views, migrations, seeds and config files to your application. (Optional)
+6. Run following command to move the package assets, views, config files to your application folder. (Optional)
 
     ```
     php artisan vendor:publish
