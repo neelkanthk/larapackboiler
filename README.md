@@ -10,7 +10,7 @@
   - Well documented with example code.
   - Encourages use of Interfaces and Database Repositories.
   - Saves a lot of time while developing a new package from scratch.
-  - Make your views customizable.
+  - Make your package views customizable in the application.
   - Provides example code for controller, model, view, interfaces, events, repositories.
 
 ### Installation
