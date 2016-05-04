@@ -31,7 +31,7 @@ Note: You need to have composer installed on your system.
   ```
   "psr-4": {
               "App\\": "app/",
-              "Package\\Application\\" : "vendor/larapackboiler/application/src/"
+              "Package\\Application\\" : "vendor/neelkanthk/larapackboiler/application/src/"
           }
   ```
 
@@ -63,7 +63,7 @@ Note: You need to have composer installed on your system.
    ```
   "psr-4": {
               "App\\": "app/",
-              "TodoPackage\\Application\\" : "vendor/todopackage/application/src/"
+              "TodoPackage\\Application\\" : "vendor/{path_to_package}/application/src/"
           }
   ```
 3. Similarly, Change the package name in your config/app.php's providers array.
