@@ -18,6 +18,8 @@
 Note: You need to have composer installed on your system.
 
 1. Download this package to your vendor folder.
+  
+   composer require neelkanthk/larapackboiler "dev-master"
 
 2. Copy the following to your config/app.php's providers array
 
@@ -74,7 +76,7 @@ Note: You need to have composer installed on your system.
 4. Change the package's composer.json psr-4 array:
 
    ```
-   "psr~4": {
+   "psr-4": {
             "todopackage\\application\\": "src/"
         }
     ```    
