@@ -18,8 +18,9 @@
 Note: You need to have composer installed on your system.
 
 1. Download this package to your vendor folder.
-  
+  ```
    composer require neelkanthk/larapackboiler "dev-master"
+   ```
 
 2. Copy the following to your config/app.php's providers array
 
