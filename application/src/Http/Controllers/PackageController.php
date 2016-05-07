@@ -62,6 +62,10 @@ class PackageController extends Controller {
     public function eventAction() {
         Event::fire(new PackageEvent());
     }
+    
+    public function restrictedAccess() {
+        return "Access granted";
+    }
 
     /**
      * A basic installation action defined for setting up database tables
