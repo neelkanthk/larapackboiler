@@ -11,7 +11,7 @@ Route::get('packagename/test', 'Package\Application\Http\Controllers\PackageCont
 Route::get('packagename/dbtest', 'Package\Application\Http\Controllers\PackageController@databaseAccess');
 Route::get('packagename/viewtest', 'Package\Application\Http\Controllers\PackageController@index');
 Route::get('packagename/eventtest', 'Package\Application\Http\Controllers\PackageController@eventAction');
-
+Route::get('packagename/middlewaretest', ['middleware' => 'packagename_auth', 'uses' => 'Package\Application\Http\Controllers\PackageController@restrictedAccess']);
 /*
   First run and installations route
   This route is optional and completely customizable.
