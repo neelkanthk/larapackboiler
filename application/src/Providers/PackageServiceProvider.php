@@ -14,10 +14,10 @@ use Illuminate\Support\ServiceProvider;
 
 class PackageServiceProvider extends ServiceProvider {
 
-    //This method is called whenever class is loaded in the config/app.php file
+    
     public function register() {
         $this->app->bind('packagename', function($app) {
-            return new Package;
+            //define your package dependencies here.
         });
 
         $this->app->bind(
