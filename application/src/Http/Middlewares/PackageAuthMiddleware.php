@@ -27,10 +27,10 @@ class PackageAuthMiddleware {
         if (!Auth::check()) {
 
             if ($request->ajax()) {
-                return response('Unauthorized.', 401);
+                return response('Unauthorized Ajax Access.', 401);
             } else {
 
-                return redirect('packagename/home');
+                return response('Unauthorized Access.', 401);
             }
         }
 
