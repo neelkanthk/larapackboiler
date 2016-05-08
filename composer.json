@@ -8,7 +8,7 @@
             "email": "neelkanth.kaushik@daffodilsw.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "illuminate/support": "~5"
     },
