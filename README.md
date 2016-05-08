@@ -2,7 +2,7 @@
 #####Version 1.0.0
 ##A package development boilerplate for Laravel 5.1+
 
-#####Provides a Jump Start to your Laravel package development.
+#####Provides a Jump Start to your Laravel package development in a structured way.
 
 ###Salient Features
 
