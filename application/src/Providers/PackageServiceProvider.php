@@ -16,7 +16,7 @@ class PackageServiceProvider extends ServiceProvider {
 
     
     public function register() {
-        $this->app->bind('packagename', function($app) {
+        $this->app->bind('', function($app) {
             //define your package dependencies here.
         });
 
