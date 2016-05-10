@@ -1,4 +1,4 @@
-@extends('packagename::layouts.auth')
+@extends('packagename::layouts.master')
 
 @section('title')
 {{ 'Login' }}

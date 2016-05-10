@@ -12,4 +12,4 @@ $.ajaxSetup({
 });
 </script>
 <!--Custom js-->
-<script src="{{ asset('/vendor/guiurpm/js/packagename-scripts.js') }}"></script>
+<script src="{{ asset('/vendor/packagename/js/packagename-scripts.js') }}"></script>
