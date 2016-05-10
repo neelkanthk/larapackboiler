@@ -75,7 +75,7 @@ class PackageController extends Controller {
      * @version 1.0.0
      */
     public function install() {
-        \Illuminate\Support\Facades\Artisan::call('migrate', array('--path' => '/vendor/laravel_packageboilerplate/application/src/database/migrations/'));
+        \Illuminate\Support\Facades\Artisan::call('migrate', array('--path' => '/vendor/packagename/application/src/database/migrations/'));
         echo "<h2>Package Tables Created Succesfully.</h2>";
         \Illuminate\Support\Facades\Artisan::call('db:seed', [
             '--class' => 'Package\Application\database\seeds\PackageTableSeeder'
