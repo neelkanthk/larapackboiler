@@ -30,7 +30,7 @@ class PackageRequest extends Request {
     public function rules() {
         return [
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|confirmed|max:255|min:6'
+            'password' => 'required|confirmed|max:255|min:4'
         ];
     }
 
