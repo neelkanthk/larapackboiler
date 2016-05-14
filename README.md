@@ -38,7 +38,7 @@ Note: You need to have composer installed on your system.
           }
   ```
 
-5. Run ``` composer dumpautoload ``` from your project root.
+5. Run ``` composer dumpautoload ``` or ``` composer dump-autoload ``` from your project root.
 
 6. Run following command to move the package assets, views, config files to your application folder. (Optional)
 
@@ -81,5 +81,7 @@ Note: You need to have composer installed on your system.
             "todopackage\\application\\": "src/"
         }
     ```    
-5. Run ``` composer dumpautoload ``` or ``` composer dump-autoload ``` from your project root.
+
+5. Run ``` composer dump-autoload ``` from your project root.
+
 6. Done. Start adding new controllers, models, routes, views to your new package.
