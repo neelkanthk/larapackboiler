@@ -1,4 +1,4 @@
-# laraPackBoiler
+# LaraPackBoiler
 #####Version 1.0.0
 ##A package development boilerplate for Laravel 5.1+
 
@@ -12,6 +12,7 @@
   - Saves a lot of time while developing a new package from scratch.
   - Make your package views customizable in the application.
   - Provides example code for controller, model, view, interfaces, events, repositories.
+  - Helps in learning Package Development.
 
 ### Installation
 
