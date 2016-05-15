@@ -2,7 +2,7 @@
 #####Version 1.0.0
 ##A package development boilerplate for Laravel 5.1+
 
-##Download [Todo Package] for a demo package built using LaraPackBoiler.
+##Download <https://github.com/neelkanthk/TodoPackage> for a demo package built using LaraPackBoiler.
 
 #####Provides a Jump Start to your Laravel package development in a structured way.
 
@@ -88,5 +88,3 @@ Note: You need to have composer installed on your system.
 5. Run ``` composer dump-autoload ``` from your project root.
 
 6. Done. Start adding new controllers, models, routes, views to your new package.
-
-[todo-package]: <https://github.com/neelkanthk/TodoPackage>
