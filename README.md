@@ -2,7 +2,7 @@
 #####Version 1.0.0
 ##A package development boilerplate for Laravel 5.1+
 
-##Download <https://github.com/neelkanthk/TodoPackage> for a demo package built using LaraPackBoiler.
+####Download <https://github.com/neelkanthk/TodoPackage> for a demo package built using LaraPackBoiler.
 
 #####Provides a Jump Start to your Laravel package development in a structured way.
 
