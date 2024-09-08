@@ -1,4 +1,4 @@
-# LaraPackBoiler
+# Laravel Package Boilerplate
 #####Version 1.0.0
 ##A package development boilerplate for Laravel 5.1+
 
